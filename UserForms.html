@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jones Engineering Form Viewer</title>
+        <link rel="icon" type="image/jpeg" href="pfp_totaro2.jpg">
+        <style>
+            body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #b3e0ff, #b3ffb3);
+            }
+            .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+            text-align: center;
+            }
+            .form-group {
+            margin-bottom: 20px;
+            }
+            .form-group label {
+            display: block;
+            font-weight: bold;
+            }
+            .form-group input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            }
+            .form-group input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            }
+            .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+            }
+        </style>
+        </head>
+        <body>
+        <div class="container">
+            <h1>Jones Engineering Form Viewer</h1>
+            <form id="searchForm">
+            <div class="form-group">
+                <label for="searchTerm">Enter Search Term:</label>
+                <input type="text" id="searchTerm" name="searchTerm" placeholder="Enter keyword...">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search">
+            </div>
+            </form>
+            <!-- Results will be displayed here -->
+            <div id="results"></div>
+        </div>
+    </body>
+</html>
